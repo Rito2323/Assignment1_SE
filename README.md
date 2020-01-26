@@ -5,8 +5,14 @@
 
 Using 2 class variables: Boolean isSchema and Boolean isArgumemtPassed.
  -Earlier code was throwing exception on either of them null or both null. 
+ 
+ 
  -Now I will first check for null schema and null arguments passed and set the 2 variables to true/false.
+
+
 -Depending on false value set, I will show appropriate message to prompt user what is expected to be passed to code as arguments/schema.
+
+
 -Used proper commenting and methods keeping in mind of clean code practices.
 
 ### Code Changes I incorporated in Argsmain.java:
