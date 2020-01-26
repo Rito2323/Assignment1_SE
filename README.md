@@ -18,20 +18,36 @@ Using 2 class variables: Boolean isSchema and Boolean isArgumemtPassed.
 ### Code Changes I incorporated in Argsmain.java:
 
 Completely restructured it
+
+
 -Created a new method setOfvaluesPassedAsArguments(arg);
+
+
 -Created a static public Boolean variable which will be set to true once the complete execution of flow is completed 
+
+
 -Inside that method setting passed arguments to appropriate class variables
+
+
 -Then calling executeApplication method from setOfvaluesPassedAsArguments
+
+
 -Printing all the values passed as arguments with its data type in console
 
 ### Code changes I incorporated in ArgsTest.java:
 
 Modified 3 test cases 
+
+
 1) testCreateWithNoSchemaOrArguments , testWithNoSchemaButWithOneArgument
  , testWithNoSchemaButWithMultipleArgument
+
+
 My new code has 2 variables isArgumentPassed and isSchema which gets set to false when either of them null .So assert should be on them for the above 3 test scenarios
 
 No unit testing was there to test out Main class:
+
+
 2)Added new test cases to test the ArgsMain class
   testMainClass_setOfvaluesPassedAsArguments_arrayPassedAsNull()
   testMainClass_setOfvaluesPassedAsArguments_doublePassedAsNull()
@@ -47,13 +63,27 @@ https://drive.google.com/file/d/1TKza3eJEMZF5su2VJhaMCsS5Jd_BUD8L/view?usp=shari
 ## 3)WHY MY CODE IS CLEAN:
 
 1)Gave appropriate comments.
+
+
 2)Gave null handlings.
    Code was missing null handlings in many areas.
+
+
 3)When there is lot of lines of code in method, grouped those lines into another method so that’s its readable.
+
+
 4)Ensured method names are good and they convey about the central logic of what the method does.
+
+
 5)Tested the code with more inputs and scenarios to see if there is any loophole or not.
+
+
 6)Changed the main.java completely restructuring it and to display more proper output statements in the console, so that the user understands what is expected output when main.java is run.
+
+
 7)Changed the ArgTest.java to accommodate my changes in Args.java
+
+
 8)ArgTest.java is changed too accommodate test cases to test ArgMain.java's code
 
 ########################################
